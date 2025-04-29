@@ -14,5 +14,8 @@
 - **Frontend**: HTML5, CSS3
 - **Backend**: None (Frontend-only project)
 
-## 📁 Project Structure
+###👨‍💻 Author
 
+Aish Maheshwari
+
+This project is open-source and available under the MIT License. """
