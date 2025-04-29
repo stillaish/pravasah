@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pravasah — Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Add Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Add Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- header start-->
+    <header> 
+        <a href="#">
+           <img class="logo" src="/img/pravasah logo.png" alt="pravasah" />
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#">Home</a></li>
+              <li><a class="main-nav-link" href="#activities">Activities</a></li>
+              <li><a class="main-nav-link" href="#locations">Locations</a></li>
+              <li><a class="main-nav-link" href="#categories">Services</a></li>
+              <li><a class="main-nav-link" href="#team">Team</a></li>
+              <li><a class="main-nav-link nav-cta" href="#cta">Book Now</a></li>
+            </ul>
+          </nav>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+          </button>
+    </header>
+    <!-- header end-->
+     <!-- main start-->
+     <main>
+      <section class="section-hero">
+        <div class="hero-slider">
+          <!-- Slide 1 -->
+          <div class="hero-slide hero-slide--1">
+            <span class="subheading">Featured Activity</span>
+            <h1 class="heading-primary hero-heading">Delhi Tour</h1>
+            <p class="hero-description">
+              The tour includes visits to India Gate, a majestic war memorial dedicated to Indian soldiers, and the impressive Qutub Minar, a UNESCO World Heritage Site known for its towering minaret. You’ll also explore the stunning Lotus Temple, a symbol of peace and unity, and the sacred Jama Masjid, one of the largest mosques in India.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities">Browse Activity</a>
+              <a class="btn btn--full" href="/img/hero/delhi.jpg">Book Now</a>
+            </div>
+          </div>
+    
+          <!-- Slide 2 -->
+          <div class="hero-slide hero-slide--2">
+            <span class="subheading">Best Activity</span>
+            <h1 class="heading-primary hero-heading">Nanital Tour</h1>
+            <p class="hero-description">
+              The tour includes a live guide, sharing fascinating insights into the history, culture, and legends of Nainital, along with details about key landmarks such as the Naina Devi Temple and the iconic Tiffin Top. Whether you're seeking tranquility or simply want to soak in the natural beauty, this boat ride is an unforgettable experience.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities">Browse Activity</a>
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+    
+          <!-- Slide 3 -->
+          <div class="hero-slide hero-slide--3">
+            <span class="subheading">New Activity</span>
+            <h1 class="heading-primary hero-heading">Mathura and Vrindavan</h1>
+            <p class="hero-description">
+              Your guided tour includes visits to iconic temples such as the Keshav Dev Temple in Mathura, believed to be the birthplace of Lord Krishna, and the serene Banke Bihari Temple in Vrindavan, known for its devotional atmosphere. You’ll also explore Prem Mandir, a stunning marble temple with intricate carvings, and Radha Kund, a sacred water body tied to Krishna's love for Radha.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities">Browse Activity</a>
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+    
+          <!-- Slider Navigation Buttons -->
+          <button class="slider__btn hero-slider__btn--left">
+            <span>&larr;</span>
+          </button>
+          <button class="slider__btn hero-slider__btn--right">
+            <span>&rarr;</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    
+            <!--Search form start -->
+        <div class="search-form-container">
+            <form action="#" class="form search-form" method="post">
+              <div class="search-form__elements">
+                <select
+                  name="select-destination"
+                  id="select-destination"
+                  required
+                >
+                  <option value="">Destination:</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="agra">Agra</option>
+                  <option value="mathura">Mathura vrindavan</option>
+                  <option value="nanital">Nanital</option>
+                  <option value="bareilly">Bareilly</option>
+                </select>
+                <select name="select-people" id="select-people" required>
+                    <option value="">people:</option>
+                    <option value="short">1 </option>
+                    <option value="medium">2-5</option>
+                    <option value="long">5-10</option>
+                    <option value="full day"> Other</option>
+                  </select>
+                <select name="select-duration" id="select-duration" required>
+                  <option value="">Duration:</option>
+                  <option value="short">1 Day</option>
+                  <option value="medium">2-3 Days</option>
+                  <option value="long">3-7 Days</option>
+                  <option value="full day"> Other</option>
+                </select>
+              </div>
+              <button class="btn btn--full" type="submit">Search</button>
+            </form>
+          </div>
+        </section>
+        <!-- serch form end-->
+         <!-- activity start maa ki choo-->
+         <section class="section-activities" id="activities">
+          <div class="container">
+            <span class="subheading center-text"></span>
+            <h2 class="heading-secondary center-text">Browse Featured Activities</h2>
+        
+            <div class="activities-container">
+              <!-- Activity 1 -->
+              <div class="activity">
+                <figure class="activity-img">
+                  <img src="img/activities/delhi2.JPG" alt="Delhi tour" />
+                </figure>
+                <a href="#cta" class="activity-heading">Delhi Tour</a>
+                <ul class="activity-attributes">
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="clock"></ion-icon>
+                    <span><strong>1-5</strong> days</span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="pin"></ion-icon>
+                    <span><strong>Delhi</strong></span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="people"></ion-icon>
+                    <span><strong>2-15</strong> people</span>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Activity 2 -->
+              <div class="activity">
+                <figure class="activity-img">
+                  <img src="img/activities/nanital.JPG" alt="Nainital Tour" />
+                </figure>
+                <a href="#cta" class="activity-heading">Nanital Tour</a>
+                <ul class="activity-attributes">
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="clock"></ion-icon>
+                    <span><strong>1-7</strong> days</span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="pin"></ion-icon>
+                    <span><strong>Nainital, Uttarakhand</strong></span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="people"></ion-icon>
+                    <span><strong>2-15</strong> people</span>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Activity 3 -->
+              <div class="activity">
+                <figure class="activity-img">
+                  <img src="img/hero/mathura.JPG" alt="Mathura and Vrindavan" />
+                </figure>
+                <a href="#cta" class="activity-heading">Mathura Tour</a>
+                <ul class="activity-attributes">
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="clock"></ion-icon>
+                    <span><strong>1-7</strong> days</span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="pin"></ion-icon>
+                    <span><strong>Mathura and Vrindavan</strong></span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="people"></ion-icon>
+                    <span><strong>2-20</strong> people</span>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Activity 4 -->
+              <div class="activity">
+                <figure class="activity-img">
+                  <img src="img/locations/agra.JPG" alt="Agra Tour" />
+                </figure>
+                <a href="#cta" class="activity-heading">Agra Tour</a>
+                <ul class="activity-attributes">
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="clock"></ion-icon>
+                    <span><strong>1-3</strong> days</span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="pin"></ion-icon>
+                    <span><strong>Agra, Uttar Pradesh</strong></span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="people"></ion-icon>
+                    <span><strong>2-10</strong> people</span>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Activity 5 -->
+              <div class="activity">
+                <figure class="activity-img">
+                  <img src="img/activities/IMG_2731.JPG" alt="Udaipur Tour" />
+                </figure>
+                <a href="#cta" class="activity-heading">Udaipur Tour</a>
+                <ul class="activity-attributes">
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="clock"></ion-icon>
+                    <span><strong>2-5</strong> days</span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="pin"></ion-icon>
+                    <span><strong>Udaipur, Rajasthan</strong></span>
+                  </li>
+                  <li class="activity-attribute">
+                    <ion-icon class="activity-icon" name="people"></ion-icon>
+                    <span><strong>2-10</strong> people</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+          <!-- activity end-->
+           <!-- locations -->
+           <section class="section-locations" id="locations">
+            <div class="container">
+              <span class="subheading">Locations</span>
+              <h2 class="heading-secondary heading-locations">
+                Wouldn't you like to be in the best locations in India?
+              </h2>
+          
+              <!-- Swiper Container -->
+              <div class="swiper">
+                <!-- Swiper Wrapper for location slides -->
+                <div class="locations-content">
+                  <div class="locations-container swiper-wrapper">
+                    
+                    <!-- Location 1: Delhi -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/delhi2.JPG" alt="Delhi" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Delhi</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Location 2: Nanital -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/nanital.JPG" alt="Nanital" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Nanital</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Location 3: Mathura and Vrindavan -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/mathura.JPG" alt="Mathura and Vrindavan" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Mathura and Vrindavan</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Location 4: Agra -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/agra.JPG" alt="Agra" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Agra</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Location 5: Varanasi -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/varanasi.WEBP" alt="Varanasi" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Varanasi</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Location 6: Bareilly -->
+                    <div class="location swiper-slide">
+                      <figure class="location-img">
+                        <img src="img/locations/bareilly.JPG" alt="Bareilly" />
+                      </figure>
+                      <div class="location-info">
+                        <div class="location-row">
+                          <a href="#cta" class="location-heading">Bareilly</a>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div> 
+                </div> 
+          
+                <!-- Swiper Navigation Buttons -->
+                <div class="swiper-button-prev locations-btn-prev"></div>
+                <div class="swiper-button-next locations-btn-next"></div>
+              </div> <!-- End of swiper -->
+            </div> <!-- End of container -->
+          </section> 
+          
+          <!-- locations ka khatma-->
+           <!-- sevices start-->
+          <section class="section-categories" id="categories">
+            <div class="container">
+              <span class="subheading center-text">Services</span>
+              <h2 class="heading-secondary center-text">Our Services</h2>
+    
+              <div class="categories-container">
+                <div class="category">
+                  <figure class="category-icon-container">
+                    <img
+                      src="img/category-icons/hotel.JPG"
+                      alt="Hotel icon"
+                      class="category-icon"
+                    />
+                  </figure>
+                  <h3 class="category-heading">Hotel booking</h3>
+                </div>
+    
+                <div class="category">
+                  <figure class="category-icon-container">
+                    <img
+                      src="img/category-icons/airline.PNG"
+                      alt="airline icon"
+                      class="category-icon"
+                    />
+                  </figure>
+                  <h3 class="category-heading">Airline tickets</h3>
+                </div>
+    
+                <div class="category">
+                  <figure class="category-icon-container">
+                    <img
+                      src="img/category-icons/train.PNG"
+                      alt="Train icon"
+                      class="category-icon"
+                    />
+                  </figure>
+                  <h3 class="category-heading">Train and buses tickets</h3>
+                </div>
+    
+                <div class="category">
+                  <figure class="category-icon-container">
+                    <img
+                      src="img/category-icons/car.JPG"
+                      alt="cab icon"
+                      class="category-icon"
+                    />
+                  </figure>
+                  <h3 class="category-heading">Cabs and bike rentals</h3>
+                </div>
+    
+                <div class="category">
+                  <figure class="category-icon-container">
+                    <img
+                      src="img/category-icons/guide.JPG"
+                      alt="travel guide icon"
+                      class="category-icon"
+                    />
+                  </figure>
+                  <h3 class="category-heading">Experienced tour guide</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services end-->
+           <!--Team-->
+      <section class="section-team" id="team">
+        <div class="container">
+          <span class="subheading">Our team</span>
+          <h2 class="heading-secondary heading-team">
+            Meet Our Developers 
+          </h2>
+
+          <div class="team-container">
+            <div class="team">
+              <figure class="team-img">
+                <a href="https://www.instagram.com/iamraman108?igsh=MXRpN3BlbjljMDNzOQ==" target="_blank">
+                <img src="img/team/ram.jpg" alt="Raman Mentor" />
+              </a>
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Raman Tiwari</h3>
+                <span class="team-position">Mentor</span>
+                <span class="team-activities">Mentorship</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <a href="https://in.linkedin.com/in/aishwarey-maheshwari-a73b832b2" target="_blank">
+                <img src="img/team/39DCAF0B-72E8-43A8-A673-73CD5A3AFBF5_4_5005_c.jpeg" alt="Aish Developer" />
+                </a>
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Aish Maheshwari</h3>
+                <span class="team-position">Front End Developer</span>
+                <span class="team-activities">Front end development</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <a href="https://in.linkedin.com/in/jayesh-prakash-shukla-16424b307" target="_blank">
+                <img src="img/team/jay.jpg" alt="team member" />
+                </a>
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Jayesh Prakash Shukla</h3>
+                <span class="team-position">Data Engineer</span>
+                <span class="team-activities">data analysis</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <a href="https://in.linkedin.com/in/ayush-parashari-4725a12aa" target="_blank">
+                <img src="img/team/para.heic" alt="Ayush Developer" />
+                </a>
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Ayush parashari</h3>
+                <span class="team-position">Back End Developer</span>
+                <span class="team-activities">Back end development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- team end -->
+ <!-- form start-->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <span class="subheading center-text">Contact us</span>
+          <h2 class="heading-secondary center-text">
+            Ready to book your next trip?
+          </h2>
+
+          <div class="cta">
+            <div>
+              <h3 class="heading-tertiary cta-heading">
+              
+              </h3>
+              <p class="cta-text">
+                Book your next adventure with us
+            </div>
+
+            <form action="#" class="form cta-form" method="post">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  pattern="[0]{1}[8-9]{1}[0-9]{8}"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input id="date" type="date" required />
+              </div>
+              <div>
+                <label for="time">Time</label>
+                <input id="time" type="time" min="10:00" max="18:00" required />
+              </div>
+              <div>
+                <label for="select-people">How many people?</label>
+                <select id="select-people" required>
+                  <option value="">Please, choose one option:</option>
+                  <option value="small">1-3</option>
+                  <option value="medium">4-6</option>
+                  <option value="large">7-10</option>
+                  <option value="extra">10+</option>
+                </select>
+              </div>
+              <div class="cta-message">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--full" type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- form end-->
+    </main>
+    <!-- main ka ram nam satya-->
+     <footer>
+        <!-- footer chalu-->
+        <div class="footer-container container">
+            <div class="footer-col-1">
+              <a href="#"
+                ><img
+                  class="footer-logo"
+                  src="img/pravasah logo.png"
+                  alt="logo"
+              /></a>
+    
+              <p class="footer-text">
+                This page is made for learning purposes only and this page is made by Aish maheshwari , ayush parashari and jayesh. Copyright ©
+                <span class="year"></span>
+                <p> copy krne wale tera muu kala. (All rights reserved).</p>   
+              </p>
+            </div>
+    <div></div>
+              <div class="social-media-logos">
+                <a href="#">
+                  <ion-icon
+                    class="social-media-logo"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+                <a href="#"
+                  ><ion-icon
+                    class="social-media-logo"
+                    name="logo-facebook"
+                  ></ion-icon
+                ></a>
+                <a href="#"
+                  ><ion-icon
+                    class="social-media-logo"
+                    name="logo-twitter"
+                  ></ion-icon
+                ></a>
+                <a href="#"
+                  ><ion-icon
+                    class="social-media-logo"
+                    name="logo-youtube"
+                  ></ion-icon
+                ></a>
+              </div>
+            <div class="footer-col-2">
+              <h4 class="footer-heading">Quick Links</h4>
+              <ul class="footer-links">
+                <li><a class="footer-link" href="#">Home</a></li>
+                <li><a class="footer-link" href="#">About us</a></li>
+                <li><a class="footer-link" href="#locations">Locations</a></li>
+                <li><a class="footer-link" href="#">Partners</a></li>
+                <li><a class="footer-link" href="#">Tours</a></li>
+                <li><a class="footer-link" href="#cta">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col-3">
+              <h4 class="footer-heading">Popular Search</h4>
+              <div class="search-items">
+                <a class="search-item" href="#">Tours</a>
+                <a class="search-item" href="#">Hotels</a>
+                <a class="search-item" href="#">Car and bike Rentals</a>
+                <a class="search-item" href="#">Train,Bus,Airline tickets</a>
+                <a class="search-item" href="#">Guide</a>
+              </div>
+            </div>
+     </footer>
+<!-- footer ki maut-->
+ <script src="index.js"></script>
+</body>
+</html>
